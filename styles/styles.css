@@ -1,0 +1,93 @@
+/* Global Styles */
+html, body {
+    overflow-x: hidden;
+    font-size: 16px;
+}
+body {
+    text-align: center;
+    background-image: url('../images/YarnWall.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+h1, h2, legend {
+    font-family: 'Twinkle Star';
+}
+h4, p, form {
+    font-family: 'Fredoka';
+}
+h4 {
+    font-size: 1.5rem;
+    color: palevioletred;
+    text-shadow: 1px 1px 5px white;
+    padding: 0 4%;
+}
+p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    padding: 0 10%;
+}
+img {
+    margin: 15px;
+}
+.content-container {
+    background-image: url('../images/WhiteKnittBackground.jpg');
+    background-size: contain;
+    background-position: center;
+    max-width: 75%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 2px 2px 20px gray;
+    
+}
+.content-container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(250, 250, 250, 0.75);
+    z-index: 0;
+}
+.content-container > * {
+    position: relative;
+    z-index: 1;
+}
+/* Banner Styles */
+h1 {
+    font-size: 3rem;
+}
+/* About Us Section Styles */
+
+/* Meetings Section Styles */
+.meetings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+img {
+    max-width: 250px;
+    flex-grow: 1;
+    border-radius: 15px;
+}
+/* Charity Section Styles */
+
+/* RSVP Section Styles */
+form {
+    background-color: bisque;
+    box-shadow: 2px 2px 20px burlywood;
+    padding: 12px;
+    width: 75%;
+    margin: 25px auto;
+    border-radius: 15px;
+}
+input {
+    margin-bottom: 15px;
+}
+legend {
+    font-size: 2rem;
+}
+fieldset {
+    border: none;
+}
